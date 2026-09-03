@@ -1,0 +1,450 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  html.light,
+  html.theme-gold {
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* ==========================================================================
+   ROYAL GOLD & OBSIDIAN BLACK THEME (Applied via .theme-gold or .light)
+   Provides prestigious, eye-friendly, ultra-high-contrast Gold and Black styling
+   eliminating all harsh light glare and invisible text issues.
+   ========================================================================== */
+
+.theme-gold,
+.light {
+  color-scheme: dark !important;
+}
+
+.theme-gold body,
+.light body {
+  background-color: #070709 !important;
+  color: #F3F4F6 !important;
+}
+
+/* Primary Page Surfaces & Containers */
+.theme-gold .bg-slate-950,
+.light .bg-slate-950,
+.theme-gold .bg-slate-950\/40,
+.light .bg-slate-950\/40,
+.theme-gold .bg-slate-950\/60,
+.light .bg-slate-950\/60,
+.theme-gold .bg-slate-950\/70,
+.light .bg-slate-950\/70,
+.theme-gold .bg-slate-950\/80,
+.light .bg-slate-950\/80,
+.theme-gold .bg-slate-950\/85,
+.light .bg-slate-950\/85,
+.theme-gold .bg-slate-950\/90,
+.light .bg-slate-950\/90 {
+  background-color: #09090D !important;
+}
+
+.theme-gold .bg-slate-900,
+.light .bg-slate-900,
+.theme-gold .bg-slate-900\/60,
+.light .bg-slate-900\/60,
+.theme-gold .bg-slate-900\/70,
+.light .bg-slate-900\/70,
+.theme-gold .bg-slate-900\/80,
+.light .bg-slate-900\/80,
+.theme-gold .bg-slate-900\/90,
+.light .bg-slate-900\/90 {
+  background-color: #121217 !important;
+}
+
+.theme-gold .bg-slate-800,
+.light .bg-slate-800,
+.theme-gold .bg-slate-800\/60,
+.light .bg-slate-800\/60,
+.theme-gold .bg-slate-800\/80,
+.light .bg-slate-800\/80 {
+  background-color: #181820 !important;
+}
+
+/* Gold Metallic Borders */
+.theme-gold .border-slate-800,
+.light .border-slate-800,
+.theme-gold .border-slate-800\/80,
+.light .border-slate-800\/80,
+.theme-gold .border-slate-800\/90,
+.light .border-slate-800\/90,
+.theme-gold .border-slate-700,
+.light .border-slate-700,
+.theme-gold .border-slate-700\/60,
+.light .border-slate-700\/60,
+.theme-gold .border-slate-700\/80,
+.light .border-slate-700\/80 {
+  border-color: rgba(212, 175, 55, 0.28) !important;
+}
+
+.theme-gold .border-cyan-500\/30,
+.light .border-cyan-500\/30,
+.theme-gold .border-cyan-500\/40,
+.light .border-cyan-500\/40,
+.theme-gold .border-cyan-500\/50,
+.light .border-cyan-500\/50,
+.theme-gold .border-cyan-800\/40,
+.light .border-cyan-800\/40,
+.theme-gold .border-cyan-800\/60,
+.light .border-cyan-800\/60,
+.theme-gold .border-cyan-900\/60,
+.light .border-cyan-900\/60 {
+  border-color: rgba(245, 158, 11, 0.5) !important;
+}
+
+/* High-Contrast Crisp Typography */
+.theme-gold .text-white,
+.light .text-white {
+  color: #FFFFFF !important;
+}
+
+.theme-gold .text-slate-100,
+.light .text-slate-100,
+.theme-gold .text-slate-200,
+.light .text-slate-200 {
+  color: #F8FAFC !important;
+}
+
+.theme-gold .text-slate-300,
+.light .text-slate-300 {
+  color: #E2E8F0 !important;
+}
+
+.theme-gold .text-slate-400,
+.light .text-slate-400 {
+  color: #CBD5E1 !important;
+}
+
+.theme-gold .text-slate-500,
+.light .text-slate-500 {
+  color: #94A3B8 !important;
+}
+
+/* 24K Radiant Gold Accents */
+.theme-gold .text-cyan-400,
+.light .text-cyan-400,
+.theme-gold .text-cyan-300,
+.light .text-cyan-300,
+.theme-gold .text-cyan-500,
+.light .text-cyan-500,
+.theme-gold .text-sky-400,
+.light .text-sky-400,
+.theme-gold .text-sky-300,
+.light .text-sky-300,
+.theme-gold .text-indigo-400,
+.light .text-indigo-400,
+.theme-gold .text-violet-400,
+.light .text-violet-400 {
+  color: #FBBF24 !important; /* Radiant gold */
+}
+
+.theme-gold .text-cyan-200,
+.light .text-cyan-200,
+.theme-gold .text-cyan-200\/90,
+.light .text-cyan-200\/90 {
+  color: #FEF3C7 !important; /* Warm champagne gold */
+}
+
+.theme-gold .border-cyan-500\/60,
+.light .border-cyan-500\/60 {
+  border-color: #F59E0B !important;
+}
+
+/* Gold Pill and Badge Backgrounds */
+.theme-gold .bg-cyan-950\/40,
+.light .bg-cyan-950\/40,
+.theme-gold .bg-cyan-950\/60,
+.light .bg-cyan-950\/60,
+.theme-gold .bg-cyan-950\/70,
+.light .bg-cyan-950\/70,
+.theme-gold .bg-cyan-500\/10,
+.light .bg-cyan-500\/10,
+.theme-gold .bg-cyan-500\/20,
+.light .bg-cyan-500\/20,
+.theme-gold .bg-sky-500\/10,
+.light .bg-sky-500\/10,
+.theme-gold .bg-indigo-500\/10,
+.light .bg-indigo-500\/10 {
+  background-color: rgba(245, 158, 11, 0.14) !important;
+}
+
+.theme-gold .bg-cyan-400,
+.light .bg-cyan-400,
+.theme-gold .bg-cyan-500,
+.light .bg-cyan-500 {
+  background-color: #F59E0B !important;
+}
+
+/* Primary 24K Gold CTA Buttons */
+.theme-gold .bg-gradient-to-r.from-cyan-500.to-blue-600,
+.light .bg-gradient-to-r.from-cyan-500.to-blue-600,
+.theme-gold #hero-cta-projects,
+.light #hero-cta-projects,
+.theme-gold #contact-submit-btn,
+.light #contact-submit-btn {
+  background-image: linear-gradient(135deg, #F59E0B 0%, #EAB308 50%, #D97706 100%) !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(254, 240, 138, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4) !important;
+}
+
+.theme-gold .bg-gradient-to-r.from-cyan-500.to-blue-600:hover,
+.light .bg-gradient-to-r.from-cyan-500.to-blue-600:hover,
+.theme-gold #hero-cta-projects:hover,
+.light #hero-cta-projects:hover,
+.theme-gold #contact-submit-btn:hover,
+.light #contact-submit-btn:hover {
+  background-image: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #B45309 100%) !important;
+  color: #000000 !important;
+  box-shadow: 0 6px 28px rgba(245, 158, 11, 0.55) !important;
+}
+
+/* Secondary Gold & Black Buttons */
+.theme-gold #hero-cta-contact,
+.light #hero-cta-contact,
+.theme-gold #hero-cta-terminal,
+.light #hero-cta-terminal {
+  background-color: #121217 !important;
+  border-color: rgba(245, 158, 11, 0.45) !important;
+  color: #FBBF24 !important;
+}
+
+.theme-gold #hero-cta-contact:hover,
+.light #hero-cta-contact:hover,
+.theme-gold #hero-cta-terminal:hover,
+.light #hero-cta-terminal:hover {
+  background-color: #181822 !important;
+  border-color: #F59E0B !important;
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Molten Gold Title Gradient */
+.theme-gold .bg-gradient-to-r.from-cyan-400.via-sky-300,
+.light .bg-gradient-to-r.from-cyan-400.via-sky-300 {
+  background-image: linear-gradient(135deg, #FEF08A 0%, #F59E0B 45%, #FBBF24 75%, #D97706 100%) !important;
+}
+
+/* Navigation Bar */
+.theme-gold #main-navbar,
+.light #main-navbar {
+  border-bottom-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+.theme-gold #nav-brand-logo,
+.light #nav-brand-logo {
+  color: #FFFFFF !important;
+}
+
+.theme-gold #nav-brand-logo:hover,
+.light #nav-brand-logo:hover {
+  color: #FBBF24 !important;
+}
+
+.theme-gold [id^="nav-link-"],
+.light [id^="nav-link-"] {
+  color: #CBD5E1 !important;
+}
+
+.theme-gold [id^="nav-link-"]:hover,
+.light [id^="nav-link-"]:hover {
+  color: #FBBF24 !important;
+}
+
+/* Cards & Surface Elevators */
+.theme-gold [id^="highlight-card-"],
+.light [id^="highlight-card-"],
+.theme-gold [id^="project-card-"],
+.light [id^="project-card-"],
+.theme-gold [id^="skill-category-"],
+.light [id^="skill-category-"],
+.theme-gold #about-profile-card,
+.light #about-profile-card,
+.theme-gold #education-card,
+.light #education-card,
+.theme-gold [id^="achievement-"],
+.light [id^="achievement-"] {
+  background-color: #111116 !important;
+  border-color: rgba(212, 175, 55, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(245, 158, 11, 0.05) !important;
+}
+
+.theme-gold [id^="highlight-card-"]:hover,
+.light [id^="highlight-card-"]:hover,
+.theme-gold [id^="project-card-"]:hover,
+.light [id^="project-card-"]:hover,
+.theme-gold [id^="skill-category-"]:hover,
+.light [id^="skill-category-"]:hover,
+.theme-gold #about-profile-card:hover,
+.light #about-profile-card:hover,
+.theme-gold #education-card:hover,
+.light #education-card:hover,
+.theme-gold [id^="achievement-"]:hover,
+.light [id^="achievement-"]:hover {
+  border-color: rgba(245, 158, 11, 0.65) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7), 0 0 25px rgba(245, 158, 11, 0.18) !important;
+}
+
+/* Featured IEEE Malaysia Achievement Card */
+.theme-gold #featured-achievement-ieee,
+.light #featured-achievement-ieee {
+  background: linear-gradient(135deg, #111116 0%, #1A160F 60%, #231B0A 100%) !important;
+  border: 2px solid #F59E0B !important;
+  box-shadow: 0 10px 40px rgba(245, 158, 11, 0.25) !important;
+}
+
+/* Skills active tabs and project filters */
+.theme-gold [id^="project-filter-"],
+.light [id^="project-filter-"],
+.theme-gold [id^="skill-filter-"],
+.light [id^="skill-filter-"] {
+  background-color: #121217 !important;
+  border-color: rgba(212, 175, 55, 0.3) !important;
+  color: #CBD5E1 !important;
+}
+
+.theme-gold [id^="project-filter-"]:hover,
+.light [id^="project-filter-"]:hover,
+.theme-gold [id^="skill-filter-"]:hover,
+.light [id^="skill-filter-"]:hover {
+  border-color: #F59E0B !important;
+  color: #FBBF24 !important;
+}
+
+/* Active Filter Pill in Gold */
+.theme-gold [id^="project-filter-"].bg-gradient-to-r,
+.light [id^="project-filter-"].bg-gradient-to-r,
+.theme-gold [id^="skill-filter-"].bg-cyan-500,
+.light [id^="skill-filter-"].bg-cyan-500 {
+  background-image: linear-gradient(135deg, #F59E0B, #EAB308, #D97706) !important;
+  background-color: #F59E0B !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  border-color: #FEF08A !important;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4) !important;
+}
+
+/* Top Accent Bar in Education */
+.theme-gold .bg-gradient-to-r.from-cyan-400.via-sky-500.to-indigo-500,
+.light .bg-gradient-to-r.from-cyan-400.via-sky-500.to-indigo-500 {
+  background-image: linear-gradient(to right, #F59E0B, #FBBF24, #D97706) !important;
+}
+
+/* Modals & Dialogs */
+.theme-gold #project-detail-modal-container,
+.light #project-detail-modal-container,
+.theme-gold #command-palette-dialog,
+.light #command-palette-dialog,
+.theme-gold #interactive-terminal-window,
+.light #interactive-terminal-window {
+  background-color: #0E0E14 !important;
+  border-color: rgba(245, 158, 11, 0.45) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(245, 158, 11, 0.18) !important;
+}
+
+/* Input Fields */
+.theme-gold input,
+.light input,
+.theme-gold textarea,
+.light textarea {
+  background-color: #13131A !important;
+  border-color: rgba(212, 175, 55, 0.35) !important;
+  color: #F8FAFC !important;
+}
+
+.theme-gold input:focus,
+.light input:focus,
+.theme-gold textarea:focus,
+.light textarea:focus {
+  border-color: #F59E0B !important;
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Text Selection */
+.theme-gold ::selection,
+.light ::selection {
+  background-color: rgba(245, 158, 11, 0.35) !important;
+  color: #FEF08A !important;
+}
+
+/* Custom Gold & Obsidian Scrollbar */
+.theme-gold ::-webkit-scrollbar-track,
+.light ::-webkit-scrollbar-track {
+  background: #070709 !important;
+}
+
+.theme-gold ::-webkit-scrollbar-thumb,
+.light ::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.45) !important;
+  border-radius: 4px;
+}
+
+.theme-gold ::-webkit-scrollbar-thumb:hover,
+.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.75) !important;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.45);
+}
+
+.light ::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.8);
+}
+.light ::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.3);
+}
+
